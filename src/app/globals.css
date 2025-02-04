@@ -1,42 +1,170 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.mt-6rem {
+  margin-top: 6rem;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.mb-6rem {
+  margin-bottom: 6rem;
+}
+.w-6{
+  width: 60%;
+}
+@media screen and (max-width: 480px) {
+  #hamburger{
+    justify-content: end !important;
+  }
+  #navbarNav li a{
+    float: right !important;
   }
 }
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+footer{
+  background-color: black !important;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+input:focus, select:focus {
+  border-color: #000 !important;
+  background-color: #f8f9fa !important;
+  outline: none;
 }
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+select.form-select option:hover {
+  background-color: #000 !important;
+  color: #fff !important;
 }
+.carousel {
+  .carousel-item {
+    position: relative;
+    height: 90vh;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+    &:before {
+      content: "";
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
+
+  .carousel-caption {
+    bottom: 30%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 44px;
+    margin: 0 0 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+section.hero{
+  height: 90vh; 
+  background-image: url("/images/porche.jpg"); 
+  background-size: cover; 
+  background-position: center;
+}
+section.hero-book{
+  height: 60vh;
+  background-color: #000;
+}
+.home-card{
+  height: 310px !important;
+  border: none !important;
+}
+.home-card h3{
+  color: #D0D0D0;
+  font-style: italic !important;
+  font-size: 1.688rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.car-row{
+  margin-bottom: 50px !important;
+}
+.car-row h3{
+  font-weight: 700;
+  font-size: 1.688rem;
+  text-transform: capitalize;
+}
+/* Add this CSS to your styles */
+.fixed {
+  height: 80vh;
+  background-image: url('/images/contct.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+.fixed .content{
+  width: 50%;
+}
+.fixed .heading {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.fixed h3{
+  font-size: 1.688rem;
+  font-weight: 500;
+  text-decoration: underline !important;
+}
+.fixed .para {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 20px;
+}
+.fixed .btn {
+  background-color: #000;
+  border: 3px solid #000;
+  font-size: 16px;
+}
+.fixed .btn:hover,
+.fixed .btn:active {
+  background-color: #fff;
+  border: 3px solid #000;
+  color: #000;
+}
+.icon-box {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
+  text-align: start;
+}
+.icon-box:hover {
+  transform: translateY(-5px);
+}
+.icon-box i{
+  width: 50px;
+  height: 50px;
+  color: #D0D0D0;
+}
+.icon-box p{
+  color: #6c757d;
+}
+.about-us,.services .para{
+  font-size: 20px;
+}
+.about-us img{
+  box-shadow: -20px 20px 0px 0px #9e8464;
+}
+.services img{
+  box-shadow: 20px 20px 0px 0px #9e8464;
+}
+button.accordion-button {
+  font-size: 22px;
+  font-weight: 600;
+}
+.form-row{
+  display: flex;
+  flex-direction: row;
 }
